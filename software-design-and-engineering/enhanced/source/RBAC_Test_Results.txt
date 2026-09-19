@@ -1,0 +1,27 @@
+﻿
+============================================
+Travlr Getaways RBAC Verification
+============================================
+
+Connected to mongodb://127.0.0.1/travlr
+
+PASS: Unauthenticated trip creation is blocked - HTTP 401
+PASS: Editor registration succeeds - HTTP 200
+PASS: New users receive Editor role - JWT role = editor
+PASS: Admin test account registration succeeds - HTTP 200
+PASS: Admin test account promoted in database
+PASS: Admin login succeeds after role assignment - HTTP 200
+PASS: Admin JWT contains Admin role - JWT role = admin
+PASS: Editor can create a trip - HTTP 201
+PASS: Editor can edit a trip - HTTP 200
+PASS: Editor cannot delete a trip - HTTP 403
+PASS: Admin can create a trip - HTTP 201
+PASS: Admin can edit a trip - HTTP 200
+PASS: Admin can delete a trip - HTTP 200
+PASS: Admin can delete a trip that an Editor could not delete - HTTP 200
+
+============================================
+RBAC VERIFICATION RESULT: ALL TESTS PASSED
+============================================
+
+Temporary RBAC test data cleaned up.
