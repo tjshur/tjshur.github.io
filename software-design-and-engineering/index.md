@@ -28,8 +28,12 @@ The enhanced application retains the original authentication system while adding
 
 [Download the Enhanced Artifact](enhanced/CS499_Travlr_Enhanced_Artifact.zip)
 
+[View the Enhancement Narrative](CS499_Travlr_Enhancement_Narrative.docx)
+
 [View RBAC Verification Results](enhanced/source/RBAC_Test_Results.txt)
 
 ### Current Status
 
-This is the initial enhancement completed for Milestone Two of CS 499. The artifact will be reviewed and revised as needed based on instructor feedback before the final ePortfolio is completed.
+This artifact has been reviewed for inclusion in the final ePortfolio. Instructor feedback did not identify any technical issues requiring changes to the enhancement and reinforced the importance of documenting the design decisions and testing evidence behind the role-based access control implementation. The enhanced artifact, verification results, and supporting documentation are included here as the finalized Software Design and Engineering artifact.
+
+
