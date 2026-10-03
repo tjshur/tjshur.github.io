@@ -12,5 +12,6 @@ My professional interests focus on applying computer science to construction tec
 - Professional Self-Assessment
 - Code Review
 - [Software Design and Engineering](software-design-and-engineering/)
-- Algorithms and Data Structures
+- [Algorithms and Data Structures](algorithms-and-data-structures/)
 - Databases
+
