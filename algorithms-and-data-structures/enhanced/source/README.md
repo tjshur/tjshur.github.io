@@ -1,4 +1,4 @@
-# CS370-SNHU
+﻿# CS370-SNHU
 
 This project was originally completed for CS 370 at SNHU and was later enhanced for CS 499: Computer Science Capstone.
 
@@ -37,7 +37,23 @@ The enhanced notebook evaluates A* using the same maze and valid starting-positi
 
 The original deep Q-learning solution and A* use very different approaches. Deep Q-learning requires a training process where the agent learns from repeated interaction with the environment before using the trained model to make navigation decisions. A* does not require training. Instead, it performs a new search each time a starting position is supplied.
 
-Not every performance measurement could be compared directly because the original CS 370 artifact did not record average path length, inference time, or the number of navigation decisions made by the trained model. The enhanced artifact therefore uses the preserved deep Q-learning results together with the additional measurements collected from the A* implementation rather than estimating measurements that were not recorded.
+### A* and Deep Q-Learning Comparison
+
+| Measurement | Deep Q-Learning | A* |
+| --- | --- | --- |
+| Success evidence | Reached a 100 percent win rate and passed the completion check at epoch 608 | Reached the treasure from all 50 valid starting positions |
+| Time measured | 13.23 minutes of training | Approximately 0.000048 seconds average search time |
+| Average path length | Not recorded in the original artifact | 15.64 moves |
+| States or nodes explored | Not recorded in the original artifact | 33.76 nodes |
+| Training required | Yes | No |
+
+The time measurements are not a direct speed comparison. The deep Q-learning value measures the time required to train the model, while the A* value measures the time required to perform an individual search after a starting position is supplied. The original CS 370 artifact did not record deep Q-learning inference time, average path length, or the number of navigation decisions made by the trained model, so I did not estimate values that were not available.
+
+### A* Time and Space Complexity
+
+The A* implementation uses a priority queue to select the next state with the lowest estimated total cost. With a heap-based priority queue, the general time complexity is O((V + E) log V), where V is the number of reachable maze states and E is the number of connections between them. In this maze, each cell has at most four neighboring cells, so E grows proportionally with V. This makes the practical worst-case time complexity approximately O(V log V).
+
+The space complexity is O(V). The algorithm may need to store information for a large portion of the reachable maze through the priority queue, `g_score` dictionary, and `came_from` dictionary used to reconstruct the final path.
 
 ## Enhanced Project Files
 

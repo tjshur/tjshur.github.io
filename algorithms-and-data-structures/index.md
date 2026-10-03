@@ -33,6 +33,13 @@ The enhancement provides a direct comparison between two very different approach
 
 [View the Enhanced README](enhanced/source/README.md)
 
+### Instructor Feedback and Final Polish
+
+Instructor feedback recommended strengthening the comparison between A* and deep Q-learning and explaining A* time and space complexity more explicitly. I incorporated that feedback into the enhanced project documentation by adding a comparison using only measurements preserved from the original deep Q-learning run and the A* testing results. I also added an explanation of the A* time and space complexity.
+
+The comparison keeps an important limitation clear: the 13.23-minute deep Q-learning measurement is training time, while the approximately 0.000048-second A* measurement is individual search time. They are included to document how each approach was evaluated, not as a direct speed comparison.
+
 ### Current Status
 
-The Algorithms and Data Structures enhancement was completed and submitted for Milestone Three of CS 499. The completed artifact, source files, test results, and narrative are preserved on this branch in preparation for final ePortfolio publication.
+This is the finalized Algorithms and Data Structures artifact for the CS 499 ePortfolio. The original artifact, enhanced artifact, source files, testing evidence, enhancement narrative, and post-feedback documentation are included here.
+
