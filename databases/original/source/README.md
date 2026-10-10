@@ -1,0 +1,10 @@
+# CS340-SNHU
+This is for the CS 340 course
+
+
+
+Writing programs that are maintainable, readable, and adaptable comes down to keeping things organized and not trying to do everything in one place. The biggest example of that in this course was the CRUD Python module. Instead of putting database logic directly into the dashboard, separating it into its own module made the overall project easier to understand and easier to update later. If something needed to change with how the database was accessed, it could be handled in one place without touching the rest of the dashboard code. That structure also makes the code more reusable. The same CRUD module could be used in a different application, whether that is another dashboard or a completely different system that needs to interact with the same database.
+
+When approaching a problem as a computer scientist, I focus on breaking the requirements into smaller pieces and solving them one at a time. For this project, that meant first making sure the database was working, then making sure queries returned the correct data, and only after that building the dashboard on top of it. This was different from some earlier courses where everything was more isolated. Here, everything had to connect and work together, which made the process more realistic. In the future, I would follow the same approach by starting with the data and making sure it is structured correctly before building anything on top of it.
+
+Computer scientists build systems that allow organizations to use their data effectively, and that has a direct impact on how well those organizations operate. In this project, the dashboard makes it easier for a company like Grazioso Salvare to identify animals that meet specific criteria without manually searching through large amounts of data. Instead of guessing or sorting through records one by one, they can filter results instantly and make decisions based on accurate information. That kind of tool improves efficiency and helps ensure better outcomes, which is why this type of work matters.
